@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run GameOfLyfe",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/GameOfLyfe/GameOfLyfe.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Test GameOfLyfe",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/GameOfLyfe.tests/GameOfLyfe.tests.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
